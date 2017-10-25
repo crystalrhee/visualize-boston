@@ -3,10 +3,9 @@ Service Learning Final Project for DS4200 at Northeastern University
 
 Matt Morgan,
 Ethan March,
-Soo Jung Rhee
+Crystal Rhee
 
-Link: https://github.ccs.neu.edu/ethmarch/VisualizeBoston.git
-Site: https://pages.github.ccs.neu.edu/ethmarch/VisualizeBoston/
+Original Link: https://github.ccs.neu.edu/ethmarch/VisualizeBoston.git
 
 Visualization 1: The line graph displays the relationship between size of each
 volunteer activity hosted by Boston Cares with the review from the volunteers.
@@ -24,3 +23,6 @@ interact with the visualization by either hover or on-click mouse events.
 
 UPDATE: October 25th, 2017
 - Crystal Rhee: Update index file and stylesheets, removed data for confidentiality
+		- Nav bar updated to top right corner
+		- Position fixed background image for header
+		- Update visualization 1 to pie graph
