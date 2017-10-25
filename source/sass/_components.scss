@@ -1,0 +1,105 @@
+@import "_mixins.scss"; // Include the CSS mixins
+@import "_variables.scss"; // Include all variables for the site like fonts
+
+nav {
+	display: flex;
+	position: relative;
+
+	// .logo {
+
+	// }
+
+	.navbar {
+		float: right;
+		position: absolute;
+		width: 100%;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			float: right;
+
+			li {
+				border-right: 1px solid $tertiary;
+				float: right;
+				margin: 1em 0;
+				padding: 0 3em;
+
+				&:last-child {
+					border-right: none;
+				}
+
+				a {
+					color: $tertiary;
+					font-size: 1em;
+					margin: .5em;
+					text-decoration: none;
+					text-transform: uppercase;
+					@include transition(all .5s ease);
+
+					&:hover {
+						color: $secondary;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+button.btn, a.btn {
+	background-color: $secondary-dark;
+	border-radius: 300px;
+	color: $tertiary;
+	padding: 15px 30px;
+	text-align: center;
+	@include transition(all .5s ease);
+
+	&:hover {
+		background-color: $secondary;
+	}
+}
+
+a {
+	color: $primary;
+}
+
+.score{
+	height: 200px;
+	left: 0;
+	position: relative;
+	top: 0;
+	width: 200px;
+
+	#circle {
+		@include transform(rotate(-90deg));
+
+		#outline {
+			fill: transparent;
+			@include stroke($primary);
+			@include stroke-width($thickness);
+			@include stroke-dasharray($area $area);
+		}
+
+		#fill {
+			fill: transparent;
+			@include stroke($secondary);
+			@include stroke-width($thickness);
+			@include stroke-dasharray(($circumference * $increment) $area);
+			@include animation(progress 2s 1);
+
+		}
+	}
+
+	.score-text {
+		color: $tertiary;
+		font-size: 3em;
+		left: 0;
+		line-height: 200px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 200px;
+		@include animation(fade 2s 1 alternate ease-in-out forwards);
+	}
+}

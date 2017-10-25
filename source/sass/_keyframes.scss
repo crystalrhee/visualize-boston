@@ -1,0 +1,31 @@
+@import "_mixins.scss"; // Include the CSS mixins
+@import "_variables.scss"; // Include all variables for the site like fonts
+
+
+@include keyframes(spin) {
+	to {
+		@include transform(rotate(0deg));
+	}
+	from {
+		@include transform(rotate(360deg));
+	}
+}
+
+@include keyframes(progress) {
+	0% {
+		@include stroke-dashoffset($circumference * $increment);
+		transition: stroke-dashoffset .1ms ease-in-out;
+	}
+}
+
+@include keyframes(fade) {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: .8;
+	}
+	100% {
+		opacity: 1;
+	}
+}

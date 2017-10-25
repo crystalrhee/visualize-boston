@@ -1,0 +1,89 @@
+@import "_variables.scss"; // Include all variables for the site like fonts
+@import "_mixins.scss"; // Include the CSS mixins
+@import "_reset.scss"; // Include the general HTML reset
+@import "_keyframes.scss"; // keyframe animations, only include if you'll be using keyframe animations
+
+/* Put all your main styles below here */
+/* When making styles, make sure to keep in mind a mobile-first mentality. 
+All your main code here should work 100% on mobile. 
+Your media queries should be for upscaling from a mobile size.*/
+
+/* Use the media queries mixins as inline media queries instead of giant media query chunks, like this:*/
+
+/*
+Include any other files split out by section here
+*/
+iframe {
+	border: 0;
+	display: block;
+	height: 100%;
+	left: 0;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	@include box-sizing(border-box);
+}
+
+body{
+	background: $primary;
+
+	header {
+		background-image: url('../img/header.jpg') ;
+		background-position: center center;
+		background-repeat:  no-repeat;
+		background-attachment: fixed;
+		background-size:  cover;
+		color: $tertiary;
+		min-height: 100vh;
+
+		.title {
+			left: 50%;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			@include transform(translate(-50%, -50%));
+
+			h1 {
+				bottom: 0;
+				right: 0;
+				text-transform: uppercase;
+			}
+
+			p {
+				margin: 10px 0;
+				text-align: left;
+			}
+		}
+	}
+
+	section {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#visualone {
+		.container {
+			.row {
+				margin: 0 auto;
+				text-align: center;
+				width: 80%;
+
+				.score {
+					margin: 0 5%;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+
+@import "_components.scss"; // general styles reused in multiple places
+
