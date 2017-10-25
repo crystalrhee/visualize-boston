@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Boston Cares Visualization</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
+</head>
+<style>
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+}
+</style>
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="http://www.ccs.neu.edu/home/borkin/courses/2017Spring/DS4200/" target="_blank">DS4200</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#visualone">Visualization 1</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#visualtwo">Visualization 2</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contributors</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Boston Cares Corporate Program</h1>
+                <hr>
+                <p>Service Learning Final Project for DS4200 at Northeastern University by Matt Morgan, Ethan March, and Soo Jung Rhee</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About Boston Cares</h2>
+                    <hr class="light">
+                    <p class="text-faded">Boston Cares is the largest volunteer agency in New England, an Innovation Hub within the national HandsOn Network, and an award winning leader in the volunteer engagement sector. Filling more than 20,000 volunteer spots annually in support of more than 165 Greater Boston schools and non-profit agencies, we offer a wide array of programs and opportunities that make it simple for you to volunteer no matter how busy your schedule. We believe volunteers transform communities through service and civic engagement.</p>
+
+                    <h4 class="section-heading">The Coporate Engagement Program</h4>
+                    <hr class="light">
+                    <p class="text-faded">The Coporate Engagement program partners with companies through boston to help the create and run community service events. It is an important branch of Boston Care's work, as it provides funding for the entire organization. With these visualizations we aimed to both highlight the overall effectiveness of this program, and visualize how and where this program is helping those in need.</p>
+                    <br><br>
+
+                    <h2 class="section-heading">About the Project</h2>
+                    <h4 class="section-heading">Motivation</h4>
+                    <hr class="light">
+                    <p class="text-faded">The goals of this project were to explore the data provided by Boston Cares through visualization and help them better understand their impact on the communities they serve, the volunteers they provide, and the corporations they partner with.<p>
+
+                    <h4 class="section-heading">Data</h4>
+                    <hr class="light">
+                    <p class="text-faded">The data provided by Boston Care's for this project was split into two sets.  The first was a collection of data from the past four years with attributes like "Hours Served", "Number of Volunteers", "Partner Organization" etc.  The second set was a group of survey results taken from volunteers at the end of their service.<p>
+
+                    <h4 class="section-heading">Task Analysis</h4>
+                    <hr class="light">
+                    <p class="text-faded">Early on in the project, we met with a member of Boston Cares to discuss what their goals for this project were and what they hoped to get out of the visualizations we produced.  Some key words that we got from that interview were: "Engagement", "Impact", and "Volunteers".  Additionally, we were able to create a task table highlighting the primary goals of the project.  We chose two of the most important task, "Map Volunteering Locations" and "Examine Volunteer Survey Results" to focus on going forward.<p>
+
+                    <h4 class="section-heading">Design Process</h4>
+                    <hr class="light">
+                    <p class="text-faded">We started our design process with each team member coming up with rough sketches of ideas for visualizations.  We then picked out favorites from those sketches and created interactive drawings of them.  We considered factors like clarity of message, coverage of our tasks, and technical feasability when creating our final sketches.  These sketches were then transformed into our final visualizations.<p>
+
+                    <h4 class="section-heading">Final Visualizations</h4>
+                    <hr class="light">
+                    <p class="text-faded">The final visualizations were created based on our final sketches using primarily D3.js.  Descriptions of the visualizations and instructions on how to interect with them can be found below in their respective sections.<p>
+
+                    <h4 class="section-heading">Data Analysis</h4>
+                    <hr class="light">
+                    <p class="text-faded">There were two primary insights that we gained from our visualizations.  The first is that the average Boston Cares volunteer is extremely satisfied with their experience.  This is something that the organizations can use to pitch their projects to new corporate partners.  The next insight is that certain areas are served much more heavily by Boston Cares.  Determining the reason for this is a more difficult task but it is certainly possible that some areas of Boston simply have more volunteering opportunities available than others.<p>
+
+                    <h4 class="section-heading">Conclusion</h4>
+                    <hr class="light">
+                    <p class="text-faded">The two visualizations created for this project do a good job addressing the task that we gave ourselves at the beginning of this project.  That being said it is clear that there is room for further exploration using the provided data.  Areas that could be looked into in the futures include Boston Cares' impact outside of the immediate Boston area and distributions of the industries that Boston Cares' corporate partners come from.<p>
+
+
+
+                    <a href="#visualone" class="page-scroll btn btn-default btn-xl sr-button">See Visualizations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visualone">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Boston Cares Corporate Survey Results</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5">
+                    <div class="service-box">
+                        <div>
+                            <iframe src="surveyVisualization.html" width="1100" height="800" align="center"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 text-center">
+                    <div class="service-box">
+                    <div id="visualizationone"></div>
+                        <p class="text-muted">With our first visualization we aimed to explore the effect that project-size had on the effectivness of the project in the Coporate program. The results show strong ratings throughout all group sizes, assuring the large companys can still get a satisfing experience no matter how large their group is. The line graph displays the relationship between size of each Corporate Volunteer activity hosted by Boston Cares with with the survery results conducted after each project. The volunteers were asked to answer a series of questions, rating from 1 to 5 after completion (1 meaning Strongly disagree, 2:Disagree,  3:Agree somewhat, 4:Agree, 5:Strongly agree). each button is assigned a question will display a line with the average response for each group size. Users can use the silder to focus in on specified group sizes and the zoom button better seen the difference in ratings. Hovering over each button will give the user a view of the full question's wording.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visualtwo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Volunteering Hours in Boston</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="service-box">
+                        <iframe src="map.html" width="800" height="700" align="center"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 text-center">
+                    <div class="service-box">
+                        <p class="text-muted">The geographic visualization explores the relationship between number of volunteer events in different areas of Boston. Users will be able to interact with the visualization by either hover or on-click mouse events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Visit Boston Cares Website!</h2>
+                <a href="https://www.bostoncares.org/" class="btn btn-default btn-xl sr-button">Visit</a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contributors</h2>
+                    <hr class="primary">
+                    <p>Matt Morgan, Ethan March, and Soo Jung Rhee</p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <i class="fa fa-file-code-o fa-3x sr-contact"></i>
+                    <p><a href="https://github.ccs.neu.edu/ethmarch/VisualizeBoston.git">view source code</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+</body>
+
+</html>
