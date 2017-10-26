@@ -64,9 +64,12 @@ body{
 	}
 
 	section {
-		margin: 0 auto;
-		padding: 35px 0;
-		width: 80%;
+		padding: 50px 0;
+
+		.container {
+			margin: 0 auto;
+			width: 80%;
+		}
 	}
 
 	#about {
@@ -76,18 +79,30 @@ body{
 	}
 
 	#visualone {
-		.container {
-			.row {
-				display: inline-block;
-				margin: 0 auto;
-				text-align: center;
-				width: 100%;
+		.row {
+			display: inline-block;
+			margin: 0 auto;
+			text-align: center;
+			width: 100%;
 
-				.score {
-					margin: 0 5%;
-					display: inline-block;
-				}
+			.score {
+				margin: 0 5%;
+				display: inline-block;
 			}
+		}
+	}
+
+	#visualtwo {
+		img {
+			display: block;
+			margin: 20px auto;
+			width: 80%;
+		}
+	}
+
+	#banner {
+		.container {
+			text-align: center;
 		}
 	}
 
@@ -132,6 +147,11 @@ body{
 				color: $secondary;
 			}
 		}
+	}
+
+	.light {
+		background: #fff;
+		color: $primary;
 	}
 }
 
