@@ -5,9 +5,11 @@ nav {
 	display: flex;
 	position: relative;
 
-	// .logo {
-
-	// }
+	.logo {
+		margin: 1em 0;
+		padding: 0 3em;
+		position: absolute;
+	}
 
 	.navbar {
 		float: right;
@@ -20,7 +22,7 @@ nav {
 			float: right;
 
 			li {
-				border-right: 1px solid $tertiary;
+				border-right: 1px solid #fff;
 				float: right;
 				margin: 1em 0;
 				padding: 0 3em;
@@ -30,7 +32,7 @@ nav {
 				}
 
 				a {
-					color: $tertiary;
+					color: #fff;
 					font-size: 1em;
 					margin: .5em;
 					text-decoration: none;
@@ -47,10 +49,33 @@ nav {
 	}
 }
 
+.row {
+	display: flex;
+	margin: 30px 0;
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.col {
+	padding: 1em;
+}
+
+.col-title {
+	flex: 1;
+}  
+
+.col-description {
+	border-left: 2px solid $secondary;
+	flex: 3;
+	max-width: 755px;
+}
+
 button.btn, a.btn {
-	background-color: $secondary-dark;
+	background-color: $tertiary;
 	border-radius: 300px;
-	color: $tertiary;
+	color: #fff;
 	padding: 15px 30px;
 	text-align: center;
 	@include transition(all .5s ease);
@@ -92,7 +117,7 @@ a {
 	}
 
 	.score-text {
-		color: $tertiary;
+		color: #fff;
 		font-size: 3em;
 		left: 0;
 		line-height: 200px;

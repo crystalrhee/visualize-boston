@@ -14,7 +14,7 @@
 
 <body>
     <nav>
-        <!-- <a href="http://www.ccs.neu.edu/home/borkin/courses/2017Spring/DS4200/" class="logo">DS4200</a> -->
+        <a href="http://www.ccs.neu.edu/home/borkin/courses/2017Spring/DS4200/" class="logo">DS4200</a>
     <!-- <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
@@ -42,52 +42,50 @@
 
     <header>
         <div class="title">
-            <h1>Boston Cares Corporate Program</h1>
+            <h1>Boston&nbsp;Cares Corporate&nbsp;Program</h1>
             <p>Service Learning Final Project for DS4200 at Northeastern University by Matt Morgan, Ethan March, and Crystal Rhee</p>
             <a href="#about" class="btn">Learn More</a>
         </div>
     </header>
 
     <section id="about">
-        <h2>About Boston Cares</h2>
-        <p>Boston Cares is the largest volunteer agency in New England, an Innovation Hub within the national HandsOn Network, and an award winning leader in the volunteer engagement sector. Filling more than 20,000 volunteer spots annually in support of more than 165 Greater Boston schools and non-profit agencies, we offer a wide array of programs and opportunities that make it simple for you to volunteer no matter how busy your schedule. We believe volunteers transform communities through service and civic engagement.</p>
+        <div class="row">
+            <h2 class="col col-title">Boston&nbsp;Cares</h2>
+            <p class="col col-description">is the largest volunteer agency in New England, an Innovation Hub within the national HandsOn Network, and an award winning leader in the volunteer engagement sector. Filling more than 20,000 volunteer spots annually in support of more than 165 Greater Boston schools and non-profit agencies, we offer a wide array of programs and opportunities that make it simple for you to volunteer no matter how busy your schedule. We believe volunteers transform communities through service and civic engagement.</p>
+        </div>
 
-        <h4>The Coporate Engagement Program</h4>
+        <h3>The Coporate Engagement Program</h3>
         <p>The Coporate Engagement program partners with companies through boston to help the create and run community service events. It is an important branch of Boston Care's work, as it provides funding for the entire organization. With these visualizations we aimed to both highlight the overall effectiveness of this program, and visualize how and where this program is helping those in need.</p>
 
+        <div class="row">
+            <h2 class="col col-title">About the Project</h2>
+            <p class="col col-description">The goals of this project were to explore the data provided by Boston Cares through visualization and help them better understand their impact on the communities they serve, the volunteers they provide, and the corporations they partner with.</p>
+        </div>
 
-        <h2>About the Project</h2>
-        <h4>Motivation</h4>
-        <p>The goals of this project were to explore the data provided by Boston Cares through visualization and help them better understand their impact on the communities they serve, the volunteers they provide, and the corporations they partner with.</p>
-
-        <h4>Data</h4>
+        <h3>Data</h3>
         <p>The data provided by Boston Care's for this project was split into two sets.  The first was a collection of data from the past four years with attributes like "Hours Served", "Number of Volunteers", "Partner Organization" etc.  The second set was a group of survey results taken from volunteers at the end of their service.</p>
 
-        <h4>Task Analysis</h4>
+        <h3>Task Analysis</h3>
         <p>Early on in the project, we met with a member of Boston Cares to discuss what their goals for this project were and what they hoped to get out of the visualizations we produced.  Some key words that we got from that interview were: "Engagement", "Impact", and "Volunteers".  Additionally, we were able to create a task table highlighting the primary goals of the project.  We chose two of the most important task, "Map Volunteering Locations" and "Examine Volunteer Survey Results" to focus on going forward.</p>
 
-        <h4>Design Process</h4>
+        <h3>Design Process</h3>
         <p>We started our design process with each team member coming up with rough sketches of ideas for visualizations.  We then picked out favorites from those sketches and created interactive drawings of them.  We considered factors like clarity of message, coverage of our tasks, and technical feasability when creating our final sketches.  These sketches were then transformed into our final visualizations.</p>
 
-        <h4>Final Visualizations</h4>
+        <h3>Final Visualizations</h3>
         <p>The final visualizations were created based on our final sketches using primarily D3.js.  Descriptions of the visualizations and instructions on how to interect with them can be found below in their respective sections.</p>
 
-        <h4>Data Analysis</h4>
+        <h3>Data Analysis</h3>
         <p>There were two primary insights that we gained from our visualizations.  The first is that the average Boston Cares volunteer is extremely satisfied with their experience.  This is something that the organizations can use to pitch their projects to new corporate partners.  The next insight is that certain areas are served much more heavily by Boston Cares.  Determining the reason for this is a more difficult task but it is certainly possible that some areas of Boston simply have more volunteering opportunities available than others.</p>
 
-        <h4>Conclusion</h4>
+        <h3>Conclusion</h3>
         <p>The two visualizations created for this project do a good job addressing the task that we gave ourselves at the beginning of this project.  That being said it is clear that there is room for further exploration using the provided data.  Areas that could be looked into in the futures include Boston Cares' impact outside of the immediate Boston area and distributions of the industries that Boston Cares' corporate partners come from.</p>
         <a href="#visualone" class="page-scroll btn">See Visualizations</a>
     </section>
 
     <section id="visualone">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Boston Cares Corporate Survey Results</h2>
-                    <hr class="primary">
-                </div>
-            </div>
+            <h2 class="section-heading">Boston Cares Corporate Survey Results</h2>
+            <hr class="primary">
         </div>
         <div class="container">
             <div class="row">
@@ -126,12 +124,6 @@
                     </svg>
                     <span class="score-text">5/5</span>
                 </div>
-                <!-- <div class="col-lg-12 col-md-6 text-center">
-                    <div class="service-box">
-                        <div id="visualizationone"></div>
-                        <p class="text-muted">With our first visualization we aimed to explore the effect that project-size had on the effectivness of the project in the Coporate program. The results show strong ratings throughout all group sizes, assuring the large companys can still get a satisfing experience no matter how large their group is. The line graph displays the relationship between size of each Corporate Volunteer activity hosted by Boston Cares with with the survery results conducted after each project. The volunteers were asked to answer a series of questions, rating from 1 to 5 after completion (1 meaning Strongly disagree, 2:Disagree,  3:Agree somewhat, 4:Agree, 5:Strongly agree). each button is assigned a question will display a line with the average response for each group size. Users can use the silder to focus in on specified group sizes and the zoom button better seen the difference in ratings. Hovering over each button will give the user a view of the full question's wording.</p>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -147,30 +139,15 @@
         </div>
         <div class="container">
             <div class="row">
-                <!-- <div class="col-xs-9">
-                    <div class="service-box">
 
-                        <iframe src="map.html" width="800" height="700" align="center"></iframe>
-                    </div>
-                </div> -->
-                <!-- <div class="col-lg-12 col-md-6 text-center">
-                    <div class="service-box">
-                        <p class="text-muted">The geographic visualization explores the relationship between number of volunteer events in different areas of Boston. Users will be able to interact with the visualization by either hover or on-click mouse events.</p>
-                    </div>
-                </div> -->
-                
             </div>
         </div>
     </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Visit Boston Cares Website!</h2>
-                <a href="https://www.bostoncares.org/" class="btn btn-default btn-xl sr-button">Visit</a>
-            </div>
-        </div>
-    </aside>
+    <section id="banner">
+        <h2>Visit Boston Cares Website!</h2>
+        <a href="https://www.bostoncares.org/" class="btn btn-default btn-xl sr-button">Visit</a>
+    </section>
 
     <section id="contact">
         <div class="container">

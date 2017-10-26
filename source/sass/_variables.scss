@@ -2,22 +2,22 @@
 =============================================*/
 $primary: #28388e; // blue
 $secondary: #fed356; // light yellow
-$secondary-dark: #febf0a; // yellow
-$tertiary: #ffffff; // white
+$tertiary: #febf0a; // yellow
 
-$bodyFont: 'montserratregular', 'Arial', sans-serif;
-$Futura: 500 15px/18px 'JB Futura', 'Futura', 'Arial', sans-serif; // for full font declaration
-$FuturaStack: 'Futura', 'Arial', sans-serif; // for when you just need the font stack
+$bodyFont: 'merriweatherregular', 'Arial', sans-serif;
 
-$MontLight: 'montserratregular', 'Arial', sans-serif;
-$MontRegular: 'montserrat_light', 'Arial', sans-serif;
-$MontBlack: 'montserratblack', 'Arial', sans-serif;
-$MontBold: 'montserratbold', 'Arial', sans-serif;
+$MerriRegular: 'merriweatherregular', 'Arial', sans-serif;
+$MerriBold: 'merriweatherbold', 'Arial', sans-serif;
 
-$MontLightFull: normal 16px/20px $MontLight;
-$MontRegularFull: normal 16px/20px $MontRegular;
-$MontBlackFull: normal 16px/20px $MontBlack;
-$MontBoldFull: normal 16px/20px $MontBold;
+$RaleRegular:'ralewayregular', 'Arial', sans-serif;
+$RaleBold:'ralewaybold', 'Arial', sans-serif;
+$RaleHeavy:'ralewayheavy', 'Arial', sans-serif;
+$RaleLight:'ralewaylight', 'Arial', sans-serif;
+
+$MerriRegularFull: normal 16px/20px $MerriRegular;
+$MerriBoldFull: normal 16px/20px $MerriBold;
+$RaleRegularFull: normal 16px/20px $RaleRegular;
+$RaleBoldFull: normal 16px/20px $RaleBold;
 
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $desktop: "(min-width: 1024px)";

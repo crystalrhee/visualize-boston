@@ -40,7 +40,6 @@ body{
 		background-repeat:  no-repeat;
 		background-attachment: fixed;
 		background-size:  cover;
-		color: $tertiary;
 		min-height: 100vh;
 
 		.title {
@@ -52,6 +51,7 @@ body{
 
 			h1 {
 				bottom: 0;
+				font-family: $RaleBold;
 				right: 0;
 				text-transform: uppercase;
 			}
@@ -65,7 +65,14 @@ body{
 
 	section {
 		margin: 0 auto;
+		padding: 35px 0;
 		width: 80%;
+	}
+
+	#about {
+		p {
+			text-align: justify;
+		}
 	}
 
 	#visualone {
