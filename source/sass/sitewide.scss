@@ -105,6 +105,11 @@ body{
 					width: 150px;
 					@include object-fit(cover);
 					@include object-position(center right);
+					@include transition(all .5s ease);
+
+					&:hover {
+						@include transform(scale(1.1));
+					}
 				}
 			}
 		}
