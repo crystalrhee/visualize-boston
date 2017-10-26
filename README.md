@@ -5,7 +5,9 @@ Matt Morgan,
 Ethan March,
 Crystal Rhee
 
-Original Link: https://github.ccs.neu.edu/ethmarch/VisualizeBoston.git
+Original Link to Repo: https://github.ccs.neu.edu/ethmarch/VisualizeBoston.git
+Original Site: https://pages.github.ccs.neu.edu/ethmarch/VisualizeBoston/
+Current Site: https://crystalrhee.github.io/visualize-boston/source/
 
 Visualization 1: The line graph displays the relationship between size of each
 volunteer activity hosted by Boston Cares with the review from the volunteers.
