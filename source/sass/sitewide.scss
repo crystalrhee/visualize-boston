@@ -78,9 +78,10 @@ body{
 	#visualone {
 		.container {
 			.row {
+				display: inline-block;
 				margin: 0 auto;
 				text-align: center;
-				width: 80%;
+				width: 100%;
 
 				.score {
 					margin: 0 5%;
